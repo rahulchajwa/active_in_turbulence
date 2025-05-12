@@ -30,6 +30,12 @@ This at long enough time scales leads to a steady state turbulence, after which 
 
 We treat other field components by similar interpolation. We evolve the particles using the equations (5) & (6) in R. Chajwa et al. https://arxiv.org/abs/2310.01829 and the flow fields using the Runge-Kutta-4 algorithm with the time step $` \Delta t = 10^{-3} `$ .
 
+Compile the c program, by including the fftw3 library, through the command line using:
+
+gcc -I$FFTW_INCLUDE -L$FFTW_LIB active_in_turbulence.c -lfftw3 -lm -o active_in_turbulence
+
+For batch processing in a cluster a separate sbatch file is included in the repository.
+
 The simulation results can be visualized using the Van-Gogh plot given in a separate repository. It shows a distribution of particle position in the backdrop of vorticity field
 
 ![active_caustics0](https://github.com/user-attachments/assets/4a854282-83cd-4549-9aaa-1772e4821897)
