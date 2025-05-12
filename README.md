@@ -1,3 +1,5 @@
+This is the workflow of the simulation presented in the preprint -- Active Caustics https://arxiv.org/abs/2310.01829 by R. Chajwa et al.
+
 The two-dimensional Navier-Stokes equation in the stream function $\psi$ and vorticity $\omega$ formulation in the Fourier space is 
 $$\hat{\psi} = -\hat{\omega}/k^2$$
 
