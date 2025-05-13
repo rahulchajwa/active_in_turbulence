@@ -32,7 +32,7 @@ We treat other field components by similar interpolation. We evolve the particle
 
 Compile the c program, by including the fftw3 library, through the command line using:
 
-gcc -I$FFTW_INCLUDE -L$FFTW_LIB active_in_turbulence.c -lfftw3 -lm -o active_in_turbulence
+gcc -I$FFTW_INCLUDE -L$FFTW_LIB active_in_turbulence.c -lfftw3 -lm -o activeparticles_in_turbulence
 
 For batch processing in a cluster a separate sbatch file is included in the repository.
 
